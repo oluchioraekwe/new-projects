@@ -20,7 +20,7 @@ hbs.registerPartials(partialsPath);
 app.use(express.static(publicDirectoryPath));
 app.get("", (req, res) => {
   res.render("index", {
-    title: "Weather App",
+    title: "Weather Application",
     name: "Oluchi Oraekwe",
   });
 });
@@ -28,16 +28,16 @@ app.get("/about", (req, res) => {
   res.render("about", {
     title: "About Me",
     message:
-      "This is a very versatile weather forcasting web app. The contents will amaze you",
-    name: "Chidi",
+      "This is a portable weather web app that gives brief weather information",
+    name: "Oluchi Oraekwe",
   });
 });
 app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help page",
-    message: `Ask your questions and get instant help
+    message: `Get help about the weather application
     about the new coming web app`,
-    name: "Ikenna",
+    name: "Oluchi Oraekwe",
   });
 });
 app.get("/weather", (req, res) => {
