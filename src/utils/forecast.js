@@ -13,7 +13,7 @@ const forecast = (longitude, latitude, callback) => {
 
       callback(
         undefined,
-        `The weather condition in ${info.location.region}  ${info.location.country} as at ${info.location.localtime} is ${info.current.weather_descriptions[0]} with average temperature of ${info.current.temperature} degrees celsius , humidity of ${info.current.humidity} and visibility of ${info.current.visibility}. There is ${info.current.precip}% of precipitation`
+        `The weather condition in ${info.location.region}  ${info.location.country} as at ${info.location.localtime} is ${info.current.weather_descriptions[0]} with average temperature of ${info.current.temperature} degrees celsius , humidity of ${info.current.humidity}% and visibility of ${info.current.visibility}km. There is ${info.current.precip}% of precipitation`
       );
     }
   });
