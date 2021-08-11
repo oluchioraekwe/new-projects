@@ -1,16 +1,3 @@
-console.log("client side javaScript file is loading");
-
-// fetch("http://localhost:3000/weather?address=?").then((response) => {
-//   response.json().then((data) => {
-//     if (data.error) {
-//       console.log(data.error);
-//     } else {
-//       console.log(data.location);
-//       console.log(data.forecast);
-//     }
-//   });
-// });
-
 const weatherForm = document.getElementById("mainForm");
 const search = document.getElementById("inputText");
 const errorMessageEl = document.getElementById("errorMessage");
